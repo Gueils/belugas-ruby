@@ -26,3 +26,6 @@ ADD . /usr/src/app
 
 VOLUME /code
 WORKDIR /code
+
+CMD ["/code/bin/belugas-ruby"]
+
