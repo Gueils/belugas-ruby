@@ -1,6 +1,8 @@
 module Belugas
   module Ruby
     class Dependency
+      attr_accessor :standard_name
+
       def initialize(bundler_dependency)
         @bundler_dependency = bundler_dependency
       end

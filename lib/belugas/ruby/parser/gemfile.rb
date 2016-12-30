@@ -14,8 +14,8 @@ module Belugas
         attr_reader :content
         attr_writer :runtime_groups
 
-        def initialize(content)
-          @content = content
+        def initialize(path)
+          @content = File.read(path)
         end
 
 
