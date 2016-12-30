@@ -1,4 +1,6 @@
 require "thor"
+require "json"
+require 'belugas/ruby/parser/gemfile'
 
 module Belugas
   module Ruby
