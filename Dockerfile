@@ -27,5 +27,5 @@ ADD . /usr/src/app
 VOLUME /code
 WORKDIR /code
 
-CMD ["/code/bin/belugas-ruby"]
+CMD ["/usr/src/app/bin/belugas-ruby", "analyze"]
 

@@ -14,10 +14,7 @@ module Belugas
         end
 
         def encode
-          transcode.values.to_json
-        end
-
-        def update
+          transcode.values
         end
       end
     end

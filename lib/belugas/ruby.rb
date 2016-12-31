@@ -11,8 +11,7 @@ module Belugas
       desc "analyze --gemfile-path=/app/code", "Ruby feature detection JSON"
       method_option "gemfile-path", type: :string, default: "/code/Gemfile", required: false, aliases: "-p"
       def analyze
-        dispatcher = Belugas::Ruby::Dispacher.new(options)
-        dispatcher.update_previous_engine_results
+        dispatcher = Belugas::Ruby::Dispatcher.new(options["gemfile-path"])
         dispatcher.render
       end
     end

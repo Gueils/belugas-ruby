@@ -15,6 +15,11 @@ module Belugas
         @version ||= @bundler_dependency.requirement.requirements.flatten.join
       end
 
+      def update(new_name)
+        @standard_name = new_name
+        self
+      end
+
       def to_json(*a)
         {
           name: name,
