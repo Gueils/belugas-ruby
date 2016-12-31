@@ -1,0 +1,32 @@
+version: '2.1'
+
+volumes:
+  app-gems:
+    driver: local
+
+services:
+
+  app:
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    image: icalialabs/belugas-ruby:development
+
+    volumes:
+      # Mount our app code directory (".") into our app containers at the `/usr/src/lib` folder:
+      - .:/usr/src/app
+
+      # Mount the 'app-gems' volume on the folder that stores bundled gems:
+      - app-gems:/usr/local/bundle
+
+      - ${HOST_CODE_PATH}:/code
+
+    # Keep the stdin open, so we can attach to our app container's process
+    # and do things such as byebug, etc:
+    stdin_open: true
+
+    # Enable sending signals (CTRL+C, CTRL+P + CTRL+Q) into the container:
+    tty: true
+
+    # The command:
+    command: guard

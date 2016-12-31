@@ -7,3 +7,10 @@
 /pkg/
 /spec/reports/
 /tmp/
+
+# Ignore dotenv files, but not the dotenv examples:
+*.env
+!*example*.env
+
+# Ignore shell/etc history files
+.*_hist*
