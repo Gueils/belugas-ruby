@@ -20,6 +20,10 @@ module Belugas
         self
       end
 
+      def categories
+        StandardNames::NAMES[name] && StandardNames::NAMES[name]["categories"]
+      end
+
       def to_json(*a)
         {
           name: name,

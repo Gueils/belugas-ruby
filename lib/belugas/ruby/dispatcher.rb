@@ -2,6 +2,7 @@ require 'belugas/ruby/feature/handler'
 require 'belugas/ruby/feature/builder'
 require 'belugas/ruby/parser/gemfile'
 require 'belugas/ruby/standard_names/base'
+require 'belugas/ruby/libraries_collection'
 
 module Belugas
   module Ruby
@@ -35,19 +36,7 @@ module Belugas
       end
 
       def dependencies
-        @dependencies ||= @gemfile.dependencies.map do |dependency|
-          dependency_name = StandardNames::Base::NAMES[dependency.name]
-
-          if dependency_name && !existing_dependencies.include?(dependency_name)
-            existing_dependencies << dependency_name
-            dependency.update dependency_name
-          end
-
-        end.compact
-      end
-
-      def existing_dependencies
-        @existing_dependencies ||= []
+        @dependencies ||= Belugas::Ruby::LibrariesCollection.new(@gemfile.dependencies).dependencies
       end
 
       def features
