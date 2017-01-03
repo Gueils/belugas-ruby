@@ -16,7 +16,7 @@ module Belugas
             "version" => @dependency.version,
             "description" => "The application uses #{@dependency.standard_name}",
             "content" => "",
-            "categories" => ["Language"],
+            "categories" => @dependency.categories,
             "cue_locations" => [""],
             "engines" => ["belugas", "belugas-ruby"]
           }

@@ -1,15 +1,18 @@
 module Belugas
   module Ruby
     module StandardNames
-      module Base
-        NAMES = {
-          "pg" => "postgresql",
-          "sidekiq" => "sidekiq",
-          "sidekiq-scheduler" => "sidekiq",
-          "rmagick" => "rmagick",
-          "mongoid" => "mongodb"
-        }
-      end
+      NAMES = {
+        "pg" => { "standard_name" => "postgresql",
+                  "categories" => ["Database"] },
+        "sidekiq" => { "standard_name" => "sidekiq",
+                       "categories" => ["Service"]},
+        "sidekiq-scheduler" => { "standard_name" => "sidekiq",
+                                 "categories" => ["Service"] },
+        "rmagick" => { "standard_name" => "rmagick",
+                       "categories" => ["Library"] },
+        "mongoid" => { "standard_name" => "mongodb",
+                       "categories" => ["Database"] }
+      }
     end
   end
 end
