@@ -2,6 +2,8 @@ module Belugas
   module Ruby
     module StandardNames
       NAMES = {
+        "rails" => { "standard_name" => "rails",
+                  "categories" => ["Framework"] },
         "pg" => { "standard_name" => "postgresql",
                   "categories" => ["Database"] },
         "sidekiq" => { "standard_name" => "sidekiq",
