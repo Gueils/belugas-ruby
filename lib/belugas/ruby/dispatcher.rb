@@ -28,9 +28,7 @@ module Belugas
           "name" => "Ruby",
           "version" => @gemfile.ruby_version,
           "description" => "The application uses Ruby code",
-          "content" => "",
           "categories" => ["Language"],
-          "cue_locations" => [],
           "engines" => ["belugas", "belugas-ruby"]
         }]
       end

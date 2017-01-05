@@ -9,7 +9,7 @@ module Belugas
   module Ruby
     module Parser
       class Gemfile
-        FALLBACK_RUBY_VERSION = "2.4"
+        FALLBACK_RUBY_VERSION = "2.4.0"
 
         attr_reader :content
         attr_writer :runtime_groups
