@@ -1,7 +1,6 @@
 <p align="center">
   <img src="belugas.png" height="300px" alt="Belugas Ruby"/>
 </p>
-![belugas.png](belugas.png)
 
 ## Overview
 
