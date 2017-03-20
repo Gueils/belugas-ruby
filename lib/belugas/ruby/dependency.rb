@@ -12,7 +12,7 @@ module Belugas
       end
 
       def version
-        @version ||= @bundler_dependency.requirement.requirements.flatten.join.match(Belugas::Ruby::Parser::Patterns::GEM_VERSION)
+        @version ||= @bundler_dependency.requirement.requirements.flatten.join.match(Belugas::Ruby::Parser::Patterns::GEM_VERSION).to_s
       end
 
       def update(new_name)
