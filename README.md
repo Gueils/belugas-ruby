@@ -1,3 +1,6 @@
+[![Code Climate](https://codeclimate.com/github/WhalesIL/belugas-ruby/badges/gpa.svg)](https://codeclimate.com/github/WhalesIL/belugas-ruby)
+[![Build Status](https://travis-ci.org/WhalesIL/belugas-ruby.svg?branch=master)](https://travis-ci.org/WhalesIL/belugas-ruby)
+
 <p align="center">
   <img src="belugas.png" height="300px" alt="Belugas Ruby"/>
 </p>
@@ -23,7 +26,7 @@ This engine works as command line interface on your local machine of a Docker co
 
 ## Why?
 
-`belugas-ruby` is part of the [Whales](https://github.com/whalesli/whales-cli) ecosystem: A set of tools to automatically dockerize your applications.
+`belugas-ruby` is part of the [Whales](https://github.com/whalesli/whales) ecosystem: A set of tools to automatically dockerize your applications.
 
 ## What is a feature?
 
@@ -89,7 +92,7 @@ The Belugas Ruby CLI is distributed and run as a [Docker](https://hub.docker.com
 Fire up your terminal and run: 
 
 ```console
-docker pull whalesli/belugas-ruby:latest
+docker pull icalialabs/belugas-ruby:latest
 ```
 
 And that's it! 
@@ -108,7 +111,7 @@ And then just execute the following command:
 docker run \
   --interactive --tty --rm \
   --volume "$PWD":/code \
-  whalesli/belugas-ruby
+  icalialabs/belugas-ruby
 ```
 
 And voilá! The terminal will stream a json output for each of the features detected in the following format: 
@@ -184,4 +187,4 @@ See [LICENSE](https://github.com/whalesli/belugas-ruby/blob/master/LICENSE.txt)
 
 ![Icalia Labs](https://raw.githubusercontent.com/icalialabs/kaishi/master/logo.png)
 
-Belugas-Ruby is maintained by [Icalia Labs](http://www.whalesli.com/team)
+Belugas-Ruby is maintained by [Icalia Labs](http://www.icalialabs.com/team)
