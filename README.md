@@ -23,11 +23,11 @@ This engine works as command line interface on your local machine of a Docker co
 
 ## Why?
 
-`belugas-ruby` is part of the [Whales](https://github.com/IcaliaLabs/whales-cli) ecosystem: A set of tools to automatically dockerize your applications.
+`belugas-ruby` is part of the [Whales](https://github.com/whalesli/whales-cli) ecosystem: A set of tools to automatically dockerize your applications.
 
 ## What is a feature?
 
-A feature is an application attribute detected during the static analysis. This analysis is the act of derivating data from code such as programming language, frameworks, service dependencies and so on. See [here](#features-supported) for a list of attributes this engine currently supports.
+A feature is an application attribute detected during the static analysis. This analysis is the act of derivating data from code such as programming language, frameworks, service dependencies and so on. See [here](#supported-features) for a list of attributes this engine currently supports.
 
 A feature has the following format:
 
@@ -82,14 +82,14 @@ Libraries & Services:
 
 ### Prerequisites
 
-The Belugas Ruby CLI is distributed and run as a [Docker](https://hub.docker.com/r/icalialabs/belugas-ruby/) image, so you only need to have Docker [installed](https://docs.docker.com/engine/installation/) and running on your machine.
+The Belugas Ruby CLI is distributed and run as a [Docker](https://hub.docker.com/r/whalesli/belugas-ruby/) image, so you only need to have Docker [installed](https://docs.docker.com/engine/installation/) and running on your machine.
 
 ### Setup
 
 Fire up your terminal and run: 
 
 ```console
-docker pull icalialabs/belugas-ruby:latest
+docker pull whalesli/belugas-ruby:latest
 ```
 
 And that's it! 
@@ -108,7 +108,7 @@ And then just execute the following command:
 docker run \
   --interactive --tty --rm \
   --volume "$PWD":/code \
-  icalialabs/belugas-ruby
+  whalesli/belugas-ruby
 ```
 
 And voilá! The terminal will stream a json output for each of the features detected in the following format: 
@@ -156,13 +156,13 @@ And voilá! The terminal will stream a json output for each of the features dete
 
 ## Contributing
 
-Everyone is freely to collaborate, just make sure you follow our [code of conduct](https://github.com/IcaliaLabs/belugas-ruby/blob/master/CODE_OF_CONDUCT.md). Thank you [contributors](https://github.com/IcaliaLabs/belugas-ruby/graphs/contributors)!
+Everyone is freely to collaborate, just make sure you follow our [code of conduct](https://github.com/whalesli/belugas-ruby/blob/master/CODE_OF_CONDUCT.md). Thank you [contributors](https://github.com/whalesli/belugas-ruby/graphs/contributors)!
 
 ### Create an Issue
 
-Find a bug and don't know how to fix it? Have trouble following the documentation or have a question about the project? Then by all means, please [create an issue](https://github.com/IcaliaLabs/belugas-ruby/issues/new).
+Find a bug and don't know how to fix it? Have trouble following the documentation or have a question about the project? Then by all means, please [create an issue](https://github.com/whalesli/belugas-ruby/issues/new).
 
-Just please make sure you check [existing issues](https://github.com/IcaliaLabs/belugas-ruby/issues) to see if what you're running into has been addressed already.
+Just please make sure you check [existing issues](https://github.com/whalesli/belugas-ruby/issues) to see if what you're running into has been addressed already.
 
 ### Submit a Pull Request
 
@@ -176,12 +176,12 @@ Once you've created a pull request, mainteners will chime in to review your prop
 
 ### I want to contribute but don't know where to start
 
-That's great also! We already have some [open issues](https://github.com/IcaliaLabs/belugas-ruby/issues) for you to dive in.
+That's great also! We already have some [open issues](https://github.com/whalesli/belugas-ruby/issues) for you to dive in.
 
 ## Copyright
 
-See [LICENSE](https://github.com/IcaliaLabs/belugas-ruby/blob/master/LICENSE.txt)
+See [LICENSE](https://github.com/whalesli/belugas-ruby/blob/master/LICENSE.txt)
 
-![Icalia Labs](https://raw.githubusercontent.com/IcaliaLabs/kaishi/master/logo.png)
+![Icalia Labs](https://raw.githubusercontent.com/icalialabs/kaishi/master/logo.png)
 
-Belugas-Ruby is maintained by [Icalia Labs](http://www.icalialabs.com/team)
+Belugas-Ruby is maintained by [Icalia Labs](http://www.whalesli.com/team)
