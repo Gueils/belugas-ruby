@@ -92,7 +92,7 @@ The Belugas Ruby CLI is distributed and run as a [Docker](https://hub.docker.com
 Fire up your terminal and run: 
 
 ```console
-docker pull icalialabs/belugas-ruby:latest
+docker pull WhalesIL/belugas-ruby:latest
 ```
 
 And that's it! 
@@ -111,7 +111,7 @@ And then just execute the following command:
 docker run \
   --interactive --tty --rm \
   --volume "$PWD":/code \
-  icalialabs/belugas-ruby
+  WhalesIL/belugas-ruby
 ```
 
 And voilá! The terminal will stream a json output for each of the features detected in the following format: 
