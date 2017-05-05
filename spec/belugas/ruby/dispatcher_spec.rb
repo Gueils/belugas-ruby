@@ -21,7 +21,7 @@ describe Belugas::Ruby::Dispatcher do
                                      "engines"=>["belugas", "belugas-ruby"]},
                                     {"type"=>"feature",
                                      "name"=>"postgresql",
-                                     "version"=>"0.15",
+                                     "version"=>"9.6",
                                      "description"=>"The application uses postgresql",
                                      "content"=>"",
                                      "categories"=>["Database"],
@@ -66,4 +66,3 @@ describe Belugas::Ruby::Dispatcher do
     end
   end
 end
-
