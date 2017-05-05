@@ -12,7 +12,11 @@ module Belugas
       end
 
       def version
-        @version ||= @bundler_dependency.requirement.requirements.flatten.join.match(Belugas::Ruby::Parser::Patterns::GEM_VERSION).to_s
+        @version ||= if categories.include?("Database")
+                       database_version
+                     else
+                       @bundler_dependency.requirement.requirements.flatten.join.match(Belugas::Ruby::Parser::Patterns::GEM_VERSION).to_s
+                     end
       end
 
       def update(new_name)
@@ -30,6 +34,17 @@ module Belugas
           version: version
         }.to_json(*a)
       end
+
+      private
+
+        def database_version
+          case StandardNames::NAMES[name]["standard_name"]
+            when "postgresql" then "9.6"
+            when "mysql" then "5.7"
+            else
+              "0"
+          end
+        end
     end
   end
 end
