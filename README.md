@@ -1,4 +1,5 @@
 [![Code Climate](https://codeclimate.com/github/WhalesIL/belugas-ruby/badges/gpa.svg)](https://codeclimate.com/github/WhalesIL/belugas-ruby)
+[![Test Coverage](https://codeclimate.com/github/walreyes/belugas-ruby/badges/coverage.svg)](https://codeclimate.com/github/walreyes/belugas-ruby/coverage)
 [![Build Status](https://travis-ci.org/WhalesIL/belugas-ruby.svg?branch=master)](https://travis-ci.org/WhalesIL/belugas-ruby)
 
 <p align="center">
@@ -50,7 +51,7 @@ A feature has the following format:
 Where:
 
 - **type**: Will always be a _feature_.
-- **name**: This is the name of the language, framework or database that is being used in the application. 
+- **name**: This is the name of the language, framework or database that is being used in the application.
 - **version**: The detected version of the feature. This one is optional
 - **description**: A string explaining the feature that was detected.
 - **content**: A markdown snippet describing the feature, including deeper explanations and links to other resources. This one is optional
@@ -89,13 +90,13 @@ The Belugas Ruby CLI is distributed and run as a [Docker](https://hub.docker.com
 
 ### Setup
 
-Fire up your terminal and run: 
+Fire up your terminal and run:
 
 ```console
 docker pull whalesil/belugas-ruby:latest
 ```
 
-And that's it! 
+And that's it!
 
 ## Usage
 
@@ -114,7 +115,7 @@ docker run \
   whalesil/belugas-ruby
 ```
 
-And voilá! The terminal will stream a json output for each of the features detected in the following format: 
+And voilá! The terminal will stream a json output for each of the features detected in the following format:
 
 ```
 {
