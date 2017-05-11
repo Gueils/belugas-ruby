@@ -1,5 +1,5 @@
 [![Code Climate](https://codeclimate.com/github/WhalesIL/belugas-ruby/badges/gpa.svg)](https://codeclimate.com/github/WhalesIL/belugas-ruby)
-[![Test Coverage](https://codeclimate.com/github/walreyes/belugas-ruby/badges/coverage.svg)](https://codeclimate.com/github/walreyes/belugas-ruby/coverage)
+[![Test Coverage](https://codeclimate.com/github/Gueils/belugas-ruby/badges/coverage.svg)](https://codeclimate.com/github/Gueils/belugas-ruby/coverage)
 [![Build Status](https://travis-ci.org/WhalesIL/belugas-ruby.svg?branch=master)](https://travis-ci.org/WhalesIL/belugas-ruby)
 
 <p align="center">
