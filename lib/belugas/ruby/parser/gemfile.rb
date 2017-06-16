@@ -29,10 +29,16 @@ module Belugas
         end
 
         def ruby_version
-          ENV['FALLBACK_RUBY_VERSION'] || content.scan(/ruby ["'](.*?)["']/).flatten[0] || FALLBACK_RUBY_VERSION
+          ENV['FALLBACK_RUBY_VERSION'] || remove_symbols_from_ruby_version(content.scan(/ruby ["'](.*?)["']/).flatten[0]) || FALLBACK_RUBY_VERSION
         end
 
         private
+
+        def remove_symbols_from_ruby_version(ruby_version)
+          return nil if ruby_version.nil?
+
+          (ruby_version.match Patterns::DIGITS_REGEX)[0].to_s
+        end
 
         def runtime_groups
           @runtime_groups ||= [:default, :production]

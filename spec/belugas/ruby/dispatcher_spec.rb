@@ -117,4 +117,16 @@ describe Belugas::Ruby::Dispatcher do
                                                           "engines" => ["belugas", "belugas-ruby"] }])
     end
   end
+
+  context "with ruby version with symbols (>,=>,<,=<)" do
+    it "return version without symbols" do
+      ruby_version_with_symbols = Belugas::Ruby::Dispatcher.new("spec/support/ruby_version_with_symbols_Gemfile")
+      expect(ruby_version_with_symbols.render).to eq([{ "type" => "feature",
+                                                          "name" => "Ruby",
+                                                          "version" => "2.3.1",
+                                                          "description" => "The application uses Ruby code",
+                                                          "categories" => ["Language"],
+                                                          "engines" => ["belugas", "belugas-ruby"] }])
+    end
+  end
 end

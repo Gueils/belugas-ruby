@@ -37,6 +37,7 @@ module Belugas
         ADD_DEPENDENCY_CALL = /^[ \t]*\w+\.add(?<type>_runtime|_development)?_dependency\(?[ \t]*#{QUOTED_GEM_NAME}(?:[ \t]*,[ \t]*#{REQUIREMENTS})?[ \t]*\)?[ \t]*#{COMMENT}$/
 
         GEM_VERSION = /[^~><=>==><](\d*?)[^~><=>==><]*/
+        DIGITS_REGEX = /(\d+([,.]\d)+)/
 
         def self.options(string)
           {}.tap do |hash|
