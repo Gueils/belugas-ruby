@@ -37,11 +37,7 @@ module Belugas
         def remove_symbols_from_ruby_version(ruby_version)
           return nil if ruby_version.nil?
 
-          ruby_version.delete!("<")
-          ruby_version.delete!(">")
-          ruby_version.delete!("=")
-          ruby_version.delete!(' ')
-          ruby_version
+          (ruby_version.match Patterns::DIGITS_REGEX)[0].to_s
         end
 
         def runtime_groups
