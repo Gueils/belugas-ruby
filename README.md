@@ -1,6 +1,6 @@
 [![Code Climate](https://codeclimate.com/github/Gueils/belugas-ruby/badges/gpa.svg)](https://codeclimate.com/github/Gueils/belugas-ruby)
 [![Test Coverage](https://codeclimate.com/github/Gueils/belugas-ruby/badges/coverage.svg)](https://codeclimate.com/github/Gueils/belugas-ruby/coverage)
-[![Build Status](https://travis-ci.org/WhalesIL/belugas-ruby.svg?branch=master)](https://travis-ci.org/WhalesIL/belugas-ruby)
+[![Build Status](https://travis-ci.org/gueils/belugas-ruby.svg?branch=master)](https://travis-ci.org/gueils/belugas-ruby)
 
 <p align="center">
   <img src="belugas.png" height="300px" alt="Belugas Ruby"/>
@@ -27,7 +27,7 @@ This engine works as command line interface on your local machine of a Docker co
 
 ## Why?
 
-`belugas-ruby` is part of the [Whales](https://github.com/whalesli/whales) ecosystem: A set of tools to automatically dockerize your applications.
+`belugas-ruby` is part of the [Whales](https://github.com/gueils/whales) ecosystem: A set of tools to automatically dockerize your applications.
 
 ## What is a feature?
 
@@ -86,14 +86,14 @@ Libraries & Services:
 
 ### Prerequisites
 
-The Belugas Ruby CLI is distributed and run as a [Docker](https://hub.docker.com/r/whalesli/belugas-ruby/) image, so you only need to have Docker [installed](https://docs.docker.com/engine/installation/) and running on your machine.
+The Belugas Ruby CLI is distributed and run as a [Docker](https://hub.docker.com/r/gueils/belugas-ruby/) image, so you only need to have Docker [installed](https://docs.docker.com/engine/installation/) and running on your machine.
 
 ### Setup
 
 Fire up your terminal and run:
 
 ```console
-docker pull whalesil/belugas-ruby:latest
+docker pull gueils/belugas-ruby:development
 ```
 
 And that's it!
@@ -112,7 +112,7 @@ And then just execute the following command:
 docker run \
   --interactive --tty --rm \
   --volume "$PWD":/code \
-  whalesil/belugas-ruby
+  gueils/belugas-ruby:development
 ```
 
 And voilá! The terminal will stream a json output for each of the features detected in the following format:
@@ -160,13 +160,13 @@ And voilá! The terminal will stream a json output for each of the features dete
 
 ## Contributing
 
-Everyone is freely to collaborate, just make sure you follow our [code of conduct](https://github.com/whalesli/belugas-ruby/blob/master/CODE_OF_CONDUCT.md). Thank you [contributors](https://github.com/whalesli/belugas-ruby/graphs/contributors)!
+Everyone is freely to collaborate, just make sure you follow our [code of conduct](https://github.com/gueils/belugas-ruby/blob/master/CODE_OF_CONDUCT.md). Thank you [contributors](https://github.com/gueils/belugas-ruby/graphs/contributors)!
 
 ### Create an Issue
 
-Find a bug and don't know how to fix it? Have trouble following the documentation or have a question about the project? Then by all means, please [create an issue](https://github.com/whalesli/belugas-ruby/issues/new).
+Find a bug and don't know how to fix it? Have trouble following the documentation or have a question about the project? Then by all means, please [create an issue](https://github.com/gueils/belugas-ruby/issues/new).
 
-Just please make sure you check [existing issues](https://github.com/whalesli/belugas-ruby/issues) to see if what you're running into has been addressed already.
+Just please make sure you check [existing issues](https://github.com/gueils/belugas-ruby/issues) to see if what you're running into has been addressed already.
 
 ### Submit a Pull Request
 
@@ -180,11 +180,11 @@ Once you've created a pull request, mainteners will chime in to review your prop
 
 ### I want to contribute but don't know where to start
 
-That's great also! We already have some [open issues](https://github.com/whalesli/belugas-ruby/issues) for you to dive in.
+That's great also! We already have some [open issues](https://github.com/gueils/belugas-ruby/issues) for you to dive in.
 
 ## Copyright
 
-See [LICENSE](https://github.com/whalesli/belugas-ruby/blob/master/LICENSE.txt)
+See [LICENSE](https://github.com/gueils/belugas-ruby/blob/master/LICENSE.txt)
 
 ![Icalia Labs](https://raw.githubusercontent.com/icalialabs/kaishi/master/logo.png)
 

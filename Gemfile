@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 gem "pry"
+gem "slack-notifier"
 
 group :test do
   gem "simplecov"
