@@ -6,7 +6,7 @@ volumes:
 
 services:
   belugas_ruby:
-    image: icalialabs/belugas-ruby:development
+    image: gueils/belugas-ruby:development
     build:
       context: .
       dockerfile: dev.Dockerfile
